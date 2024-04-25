@@ -1,4 +1,4 @@
-const Gameboard = ({ rows, changeColour}: {rows: string, changeColour: string[]}) => {
+const Gameboard = ({ rows, changeColour}: {rows: string[], changeColour: string[]}) => {
   return (
         <div className='grid grid-cols-5 gap-1 w-1/3 max-w-80 min-w-52 mx-auto my-1'>
           {rows.map((row: string, index: number) => (
