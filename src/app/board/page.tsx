@@ -12,7 +12,7 @@ const Board = ({ answer }: any) => {
   const [same, setSame] = useState<string[]>([]);
   const [notInAnswer, setNotInAnswer] = useState<string[]>([]);
   const [changeColour, setChangeColor] = useState<string[]>(Array.from({ length: 30 }, () => 'none'));
-  const [rows, setRows] = useState<(string | undefined)[]>(Array.from({ length: 30 }, () => undefined));
+  const [rows, setRows] = useState<any[]>(Array.from({ length: 30 }, () => undefined));
   const [userAttempts, setUserAttempts] = useState<number>(0);
   const [winner, setWinner] = useState<boolean>(false);
 
