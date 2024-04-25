@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function ModalLoser({ answer }) {
+function ModalLoser({ answer }: any) {
     const [isOpen, setIsOpen] = useState<boolean>(true);
 
     const toggleModal = () => setIsOpen(!isOpen);
