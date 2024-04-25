@@ -112,7 +112,7 @@ const Board = ({ answer }: any) => {
       }
       })
 
-      rowsArray.forEach((row, rowIndex: number) => {
+      rowsArray.forEach((row: any, rowIndex: number) => {
         for(let i= 0; i <= 4; i++) {
         
           if (row[i] === answer[i]) {
