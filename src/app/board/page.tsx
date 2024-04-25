@@ -6,7 +6,7 @@ import Gameboard from './gameboard';
 import Modal from './modalWinner';
 import ModalLoser from './modalLoser';
 
-const Board = ({ answer }) => {
+const Board = ({ answer }: any) => {
 
   const [different, setDifferent] = useState<string[]>([]);
   const [same, setSame] = useState<string[]>([]);
