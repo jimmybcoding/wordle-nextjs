@@ -19,7 +19,7 @@ const Board = ({ answer }: any) => {
   const firstEmpty: number = rows.indexOf(undefined);
   let pressedKey: string;
 
-  const handleKeyClick = (e: React.MouseEvent<HTMLButtonElement>) => {  
+  const handleKeyClick = (event: React.MouseEvent<HTMLButtonElement>) => {  
     if(
       firstEmpty === 5 && userAttempts === 0 ||
       firstEmpty === 10 && userAttempts === 1 ||
@@ -31,7 +31,7 @@ const Board = ({ answer }: any) => {
       return
     } else {
     
-      let pressedKey: string = e.target.value;
+      let pressedKey: string = event.currentTarget.value;
       const newArray: (string | undefined)[] = [...rows];
       newArray[firstEmpty] = pressedKey
       setRows(newArray);
@@ -41,7 +41,7 @@ const Board = ({ answer }: any) => {
     )
   }
 
-  const handleDelete = () => {
+  const handleDelete = (event: React.MouseEvent<HTMLButtonElement>) => {
 
     if(
       firstEmpty === 5 && userAttempts >= 1 ||
@@ -68,7 +68,7 @@ const Board = ({ answer }: any) => {
     }
   }
  
-  const handleSubmit = () => {
+  const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
     if (
       userAttempts === 6 || 
       firstEmpty != 5 &&

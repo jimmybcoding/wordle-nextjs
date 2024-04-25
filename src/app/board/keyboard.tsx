@@ -1,5 +1,13 @@
 
-const Keyboard = ({ handleKeyClick, handleDelete, handleSubmit, same, different, notInAnswer, changeColour }) => {
+const Keyboard: React.FC<{
+    handleKeyClick: () => any;
+    handleDelete: () => void;
+    handleSubmit: () => void;
+    same: string[];
+    different: string[];
+    notInAnswer: string[];
+    changeColour: boolean;
+}> = ({ handleKeyClick, handleDelete, handleSubmit, same, different, notInAnswer, changeColour }) => {
     const topKeys: string[] = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
     const middleKeys: string[] = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
     const bottomKeys: string[] = ["Z", "X", "C", "V", "B", "N", "M"];
