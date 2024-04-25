@@ -94,7 +94,7 @@ const Board = ({ answer }: any) => {
       const isAbsent: string[] = [];
       let isWinner = false;
 
-      rowsArray.forEach((row: (string | undefined)[]) => {
+      rowsArray.forEach((row) => {
         let allCorrect = true;
         for(let i = 0; i <= 4; i++) {
           if( row[i] !== answer[i]){          
@@ -112,7 +112,7 @@ const Board = ({ answer }: any) => {
       }
       })
 
-      rowsArray.forEach((row: (string | undefined)[], rowIndex: number) => {
+      rowsArray.forEach((row, rowIndex: number) => {
         for(let i= 0; i <= 4; i++) {
         
           if (row[i] === answer[i]) {
