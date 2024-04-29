@@ -1,6 +1,6 @@
 
 const Keyboard: React.FC<{
-    handleKeyClick: () => any;
+    handleKeyClick: (value: string) => void;
     handleDelete: () => void;
     handleSubmit: () => void;
     same: string[];

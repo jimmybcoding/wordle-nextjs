@@ -140,7 +140,7 @@ const Board = ({ answer }: any) => {
     <>
       {winner ? <Modal answer={answer} /> : !winner && userAttempts === 6 ? <ModalLoser answer={answer}/> : null}
       <Gameboard rows={rows} changeColour={changeColour} />
-      <Keyboard handleKeyClick={handleKeyClick} handleDelete={handleDelete} handleSubmit={handleSubmit} changeColour={changeColour} same={same} different={different} notInAnswer={notInAnswer} />
+      <Keyboard handleKeyClick={handleKeyClick(pressedKey)} handleDelete={handleDelete} handleSubmit={handleSubmit} changeColour={changeColour} same={same} different={different} notInAnswer={notInAnswer} />
     </>
 )
 }
