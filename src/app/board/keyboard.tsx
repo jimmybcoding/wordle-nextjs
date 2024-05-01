@@ -6,7 +6,7 @@ const Keyboard: React.FC<{
     same: string[];
     different: string[];
     notInAnswer: string[];
-    changeColour: boolean;
+    changeColour: string[];
 }> = ({ handleKeyClick, handleDelete, handleSubmit, same, different, notInAnswer, changeColour }) => {
     const topKeys: string[] = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
     const middleKeys: string[] = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
