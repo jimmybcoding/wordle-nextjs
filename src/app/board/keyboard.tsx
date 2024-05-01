@@ -1,8 +1,8 @@
 
 const Keyboard: React.FC<{
-    handleKeyClick: (value: string) => void;
-    handleDelete: () => void;
-    handleSubmit: () => void;
+    handleKeyClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    handleDelete: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    handleSubmit: (event: React.MouseEvent<HTMLButtonElement>) => void;
     same: string[];
     different: string[];
     notInAnswer: string[];
@@ -21,6 +21,7 @@ const Keyboard: React.FC<{
                 className={`border-2 border-black rounded-md p-2 hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-300' : changeColour && notInAnswer.includes(value) ? 'bg-slate-500' : 'bg-slate-100'}`}
                 key={index}
                 value={value}
+                /* onClick={(event) => handleKeyClick((event.target as HTMLButtonElement).value)} */
                 onClick={handleKeyClick}
               >
                 {value}
