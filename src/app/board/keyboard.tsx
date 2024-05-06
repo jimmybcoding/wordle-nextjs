@@ -19,7 +19,7 @@ const Keyboard: React.FC<{
           {topKeys.map((value, index) => {
             return (
               <button
-                className={`border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-slate-800' : 'bg-slate-100 dark:bg-slate-600'}`}
+                className={`border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
                 key={index}
                 value={value}
                 onClick={handleKeyClick}
@@ -33,7 +33,7 @@ const Keyboard: React.FC<{
           {middleKeys.map((value, index) => {
             return (
               <button
-              className={`border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-slate-800' : 'bg-slate-100 dark:bg-slate-600'}`}
+              className={`border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
               key={index}
               value={value}
               onClick={handleKeyClick}
@@ -47,7 +47,7 @@ const Keyboard: React.FC<{
           {bottomKeys.map((value, index) => {
             return (
               <button
-              className={`flex-auto border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-slate-800' : 'bg-slate-100 dark:bg-slate-600'}`}
+              className={`flex-auto border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
               key={index}
               value={value}
               onClick={handleKeyClick}

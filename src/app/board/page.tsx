@@ -146,7 +146,7 @@ const Board = ({ answer }: any) => {
   return (
     <>
       {winner ? <Modal answer={answer} /> : !winner && userAttempts >= 6 ? <ModalLoser answer={answer}/> : null}
-      <div className='flex flex-col justify-around h-screen my-2'>
+      <div className='flex flex-col justify-evenly h-screen my-2'>
         <Gameboard rows={rows} changeColour={changeColour} />
         <Keyboard handleKeyClick={handleKeyClick} handleDelete={handleDelete} handleSubmit={handleSubmit} changeColour={changeColour} same={same} different={different} notInAnswer={notInAnswer} />
       </div>
