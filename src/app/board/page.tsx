@@ -128,8 +128,14 @@ const Board = ({ answer }: any) => {
           }
         }
       });
+    
+      firstEmpty === 5 ? setUserAttempts(1) : 
+      firstEmpty === 10 ? setUserAttempts(2) :
+      firstEmpty === 15 ? setUserAttempts(3) :
+      firstEmpty === 20 ? setUserAttempts(4) :
+      firstEmpty === 25 ? setUserAttempts(5) :
+      setUserAttempts(6)
       setChangeColor(colourArray);
-      setUserAttempts(userAttempts + 1);
       setSame(isSame);
       setDifferent(isDifferent);
       setNotInAnswer(isAbsent);
@@ -139,9 +145,11 @@ const Board = ({ answer }: any) => {
       
   return (
     <>
-      {winner ? <Modal answer={answer} /> : !winner && userAttempts === 6 ? <ModalLoser answer={answer}/> : null}
-      <Gameboard rows={rows} changeColour={changeColour} />
-      <Keyboard handleKeyClick={handleKeyClick} handleDelete={handleDelete} handleSubmit={handleSubmit} changeColour={changeColour} same={same} different={different} notInAnswer={notInAnswer} />
+      {winner ? <Modal answer={answer} /> : !winner && userAttempts >= 6 ? <ModalLoser answer={answer}/> : null}
+      <div className='flex flex-col justify-around h-screen my-2'>
+        <Gameboard rows={rows} changeColour={changeColour} />
+        <Keyboard handleKeyClick={handleKeyClick} handleDelete={handleDelete} handleSubmit={handleSubmit} changeColour={changeColour} same={same} different={different} notInAnswer={notInAnswer} />
+      </div>
     </>
 )
 }

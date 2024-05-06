@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Provider from "./darkMode/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-emerald-400`}>{children}</body>
+      <Provider>
+        <body className={`${inter.className} bg-emerald-400 dark:bg-slate-900`}>{children}</body>
+      </Provider>
     </html>
   );
 }
