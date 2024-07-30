@@ -15,11 +15,11 @@ const Keyboard: React.FC<{
 
   return (
     <div className='flex flex-col items-center max-w-96 min-w-72 mx-auto mt-4 justify-center'>
-        <div className='flex gap-1 my-1 text-center'>
+        <div className='flex gap-1 my-1'>
           {topKeys.map((value, index) => {
             return (
               <button
-                className={`border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
+                className={`sm:w-10 sm:h-10 w-9 h-9 border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
                 key={index}
                 value={value}
                 onClick={handleKeyClick}
@@ -33,7 +33,7 @@ const Keyboard: React.FC<{
           {middleKeys.map((value, index) => {
             return (
               <button
-              className={`border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
+              className={`sm:w-10 sm:h-10 w-9 h-9 border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
               key={index}
               value={value}
               onClick={handleKeyClick}
@@ -47,7 +47,7 @@ const Keyboard: React.FC<{
           {bottomKeys.map((value, index) => {
             return (
               <button
-              className={`flex-auto border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
+              className={`sm:w-10 sm:h-10 w-9 h-9 flex-auto border-2 border-black rounded-md p-2 hover:bg-purple-800 dark:hover:bg-purple-800 hover:text-slate-100 font-bold ${same.includes(value) ? 'bg-green-700' : changeColour && different.includes(value) ? 'bg-yellow-500' : changeColour && notInAnswer.includes(value) ? 'bg-zinc-700' : 'bg-slate-100 dark:bg-slate-600'}`}
               key={index}
               value={value}
               onClick={handleKeyClick}
