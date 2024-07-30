@@ -14,7 +14,7 @@ const Keyboard: React.FC<{
     const bottomKeys: string[] = ["Z", "X", "C", "V", "B", "N", "M"];
 
   return (
-    <div className='flex flex-wrap max-w-96 min-w-72 mx-auto mt-4 justify-center'>
+    <div className='flex flex-col items-center max-w-96 min-w-72 mx-auto mt-4 justify-center'>
         <div className='flex gap-1 my-1 text-center'>
           {topKeys.map((value, index) => {
             return (
