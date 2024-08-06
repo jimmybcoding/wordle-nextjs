@@ -21,7 +21,7 @@ export default async function getData() {
         'MEDIA','NEWLY','NOISE','NORTH','NURSE','OFFER',
         'OPENS','OFTEN','PRICE','PROUD','QUEEN','QUILT',
         'QUIET','ROLLS','RIVAL','READY','SEARCH','SCORE',
-        'SOURCE','SERVE','TRUST','TIMED','THERE','TRIPS',
+        'SOURS','SERVE','TRUST','TIMED','THERE','TRIPS',
         'UNDER','UPPER','VICES','VEINS','VISOR','WHERE',
         'WILTS','WINGS','WARTS','WAGON','YOUTH','YOUNG',
         'YOURS','ZEBRA','PIZZA'
