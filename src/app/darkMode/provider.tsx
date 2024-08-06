@@ -1,5 +1,5 @@
 "use client"
-import { ThemeProvider } from '../../../node_modules/next-themes/dist/index';
+import { ThemeProvider } from 'next-themes';
 import { useState, useEffect } from 'react'
 
 type Props = {
