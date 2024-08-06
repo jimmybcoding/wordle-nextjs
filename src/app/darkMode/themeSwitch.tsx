@@ -2,7 +2,7 @@
 
 import { SunIcon } from '@heroicons/react/24/outline';
 import { MoonIcon } from '@heroicons/react/24/solid';
-import { useTheme } from "../../../node_modules/next-themes/dist/index";
+import { useTheme } from "next-themes";
 
 const ThemeSwitcher = () => {
  
