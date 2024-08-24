@@ -10,7 +10,7 @@ export default async function getData() {
   }
     catch{
       const fetchFailedWords = [
-        'ABOVE','ALIKE','ARRAY', 'ARGUE', 'ASIDE', 'ALLOW',
+        'ABOVE','ALIKE', 'ARGUE', 'ASIDE', 'ALLOW',
         'BEGIN','BENCH','BELOW','BEING','BOARD','CRASH',
         'CRIME','CATCH','CIVIL','DELAY','DOING','EVERY',
         'EXACT','EXIST','ERROR','EVENT','FOUND','FRAME',
@@ -20,7 +20,7 @@ export default async function getData() {
         'LOCAL','LOGIC','LABEL','MONEY','MINOR','MIGHT',
         'MEDIA','NEWLY','NOISE','NORTH','NURSE','OFFER',
         'OPENS','OFTEN','PRICE','PROUD','QUEEN','QUILT',
-        'QUIET','ROLLS','RIVAL','READY','SEARCH','SCORE',
+        'QUIET','ROLLS','RIVAL','READY','SCORE',
         'SOURS','SERVE','TRUST','TIMED','THERE','TRIPS',
         'UNDER','UPPER','VICES','VEINS','VISOR','WHERE',
         'WILTS','WINGS','WARTS','WAGON','YOUTH','YOUNG',
